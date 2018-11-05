@@ -1,8 +1,16 @@
 package com.kulak.parking.support.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class CarModel {
     private String modelLine;
     private String modelNumber;
+
+    public CarModel(){
+
+    }
 
     public CarModel(String modelLine, String modelNumber) {
         this.modelLine = modelLine;
@@ -15,6 +23,16 @@ public class CarModel {
 
     public String getModelNumber() {
         return modelNumber;
+    }
+
+    @XmlAttribute
+    public void setModelLine(String modelLine) {
+        this.modelLine = modelLine;
+    }
+
+    @XmlAttribute
+    public void setModelNumber(String modelNumber) {
+        this.modelNumber = modelNumber;
     }
 
     @Override

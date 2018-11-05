@@ -1,4 +1,4 @@
-package com.kulak.parking.support;
+package com.kulak.parking.support.util;
 
 import com.kulak.parking.support.entity.car.Car;
 
